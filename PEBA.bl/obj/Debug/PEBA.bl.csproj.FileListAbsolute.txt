@@ -1,0 +1,14 @@
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\bin\Debug\PEBA.bl.dll.config
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\bin\Debug\PEBA.bl.dll
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\bin\Debug\PEBA.bl.pdb
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\bin\Debug\AutoMapper.dll
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\bin\Debug\EntityFramework.dll
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\bin\Debug\AutoMapper.xml
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\bin\Debug\EntityFramework.xml
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\obj\Debug\PEBA.bl.csproj.AssemblyReference.cache
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\obj\Debug\PEBA.bl.csproj.CoreCompileInputs.cache
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\obj\Debug\PEBA.bl.csproj.CopyComplete
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\obj\Debug\PEBA.bl.dll
+C:\Users\Emma_\source\repos\PEBA\PEBA.bl\obj\Debug\PEBA.bl.pdb

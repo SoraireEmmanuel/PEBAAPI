@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDC30968-E501-4AB4-964E-4C2132AEBDC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PEBA.bl</RootNamespace>
+    <AssemblyName>PEBA.bl</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\PEBAContext.cs" />
+    <Compile Include="DTOs\AccountDTO.cs" />
+    <Compile Include="DTOs\ComprensionAuditiva_CualitativaDTO.cs" />
+    <Compile Include="DTOs\ComprensionAuditiva_CuantitativaDTO.cs" />
+    <Compile Include="DTOs\Denominacion_CualitativaDTO.cs" />
+    <Compile Include="DTOs\Denominacion_CuantitativaDTO.cs" />
+    <Compile Include="DTOs\Escritura_CualitativaDTO.cs" />
+    <Compile Include="DTOs\Escritura_CuantitativaDTO.cs" />
+    <Compile Include="DTOs\ExpresionOral_CualitativaDTO.cs" />
+    <Compile Include="DTOs\ExpresionOral_CuantitativaDTO.cs" />
+    <Compile Include="DTOs\HistorialDTO.cs" />
+    <Compile Include="DTOs\Lectura_CualitativaDTO.cs" />
+    <Compile Include="DTOs\Lectura_CuantitativaDTO.cs" />
+    <Compile Include="DTOs\MapperConfig.cs" />
+    <Compile Include="DTOs\PacienteDTO.cs" />
+    <Compile Include="DTOs\ProfesionalDTO.cs" />
+    <Compile Include="DTOs\ProtocoloDTO.cs" />
+    <Compile Include="DTOs\Repeticion_CualitativaDTO.cs" />
+    <Compile Include="DTOs\Repeticion_CuantitativaDTO.cs" />
+    <Compile Include="DTOs\SintomasNeurologicosDTO.cs" />
+    <Compile Include="Models\ComprensionAuditiva_Cualitativa.cs" />
+    <Compile Include="Models\ComprensionAuditiva_Cuantitativa.cs" />
+    <Compile Include="Models\Denominacion_Cualitativa.cs" />
+    <Compile Include="Models\Denominacion_Cuantitativa.cs" />
+    <Compile Include="Models\Escritura_Cualitativa.cs" />
+    <Compile Include="Models\Escritura_Cuantitativa.cs" />
+    <Compile Include="Models\ExpresionOral_Cualitativa.cs" />
+    <Compile Include="Models\ExpresionOral_Cuantitativa.cs" />
+    <Compile Include="Models\Lectura_Cualitativa.cs" />
+    <Compile Include="Models\Lectura_Cuantitativa.cs" />
+    <Compile Include="Models\Paciente.cs" />
+    <Compile Include="Models\Profesional.cs" />
+    <Compile Include="Models\Protocolo.cs" />
+    <Compile Include="Models\Repeticion_Cualitativa.cs" />
+    <Compile Include="Models\Repeticion_Cuantitativa.cs" />
+    <Compile Include="Models\SintomasNeurologicos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IComprensionAuditiva_Cualitativa.cs" />
+    <Compile Include="Repositories\IComprensionAuditiva_Cuantitativa.cs" />
+    <Compile Include="Repositories\IDenominacion_Cualitativa.cs" />
+    <Compile Include="Repositories\IDenominacion_Cuantitativa.cs" />
+    <Compile Include="Repositories\IEscritura_Cualitativa.cs" />
+    <Compile Include="Repositories\IEscritura_Cuantitativa.cs" />
+    <Compile Include="Repositories\IExpresionOral_Cualitativa.cs" />
+    <Compile Include="Repositories\IExpresionOral_Cuantitativa.cs" />
+    <Compile Include="Repositories\IGenericRepository.cs" />
+    <Compile Include="Repositories\ILectura_Cualitativa.cs" />
+    <Compile Include="Repositories\ILectura_Cuantitativa.cs" />
+    <Compile Include="Repositories\Implements\ComprensionAuditiva_CualitativaRepository.cs" />
+    <Compile Include="Repositories\Implements\ComprensionAuditiva_CuantitativaRepository.cs" />
+    <Compile Include="Repositories\Implements\Denominacion_CualitativaRepository.cs" />
+    <Compile Include="Repositories\Implements\Denominacion_CuantitativaRepository.cs" />
+    <Compile Include="Repositories\Implements\Escritura_CualitativaRepository.cs" />
+    <Compile Include="Repositories\Implements\Escritura_CuantitativaRepository.cs" />
+    <Compile Include="Repositories\Implements\ExpresionOral_CualitativaRepository.cs" />
+    <Compile Include="Repositories\Implements\ExpresionOral_CuantitativaRepository.cs" />
+    <Compile Include="Repositories\Implements\GenericRepository.cs" />
+    <Compile Include="Repositories\Implements\Lectura_CualitativaRepository.cs" />
+    <Compile Include="Repositories\Implements\Lectura_CuantitativaRepository.cs" />
+    <Compile Include="Repositories\Implements\PacienteRepository.cs" />
+    <Compile Include="Repositories\Implements\ProfesionalRepository.cs" />
+    <Compile Include="Repositories\Implements\ProtocoloRepository.cs" />
+    <Compile Include="Repositories\Implements\Repeticion_CualitativaRepository.cs" />
+    <Compile Include="Repositories\Implements\Repeticion_CuantitativaRepository.cs" />
+    <Compile Include="Repositories\Implements\SintomasNeurologicosRepository.cs" />
+    <Compile Include="Repositories\IPaciente.cs" />
+    <Compile Include="Repositories\IProfesional.cs" />
+    <Compile Include="Repositories\IProtocolo.cs" />
+    <Compile Include="Repositories\IRepeticion_Cualitativa.cs" />
+    <Compile Include="Repositories\IRepeticion_Cuantitativa.cs" />
+    <Compile Include="Repositories\ISintomasNeurologicos.cs" />
+    <Compile Include="Service\IComprensionAuditiva_CualitativaService.cs" />
+    <Compile Include="Service\IComprensionAuditiva_CuantitativaService.cs" />
+    <Compile Include="Service\IDenominacion_CualitativaService.cs" />
+    <Compile Include="Service\IDenominacion_CuantitativaService.cs" />
+    <Compile Include="Service\IEscritura_CualitativaService.cs" />
+    <Compile Include="Service\IEscritura_CuantitativaService.cs" />
+    <Compile Include="Service\IExpresionOral_CualitativaService.cs" />
+    <Compile Include="Service\IExpresionOral_CuantitativaService.cs" />
+    <Compile Include="Service\IGenericService.cs" />
+    <Compile Include="Service\ILectura_CualitativaService.cs" />
+    <Compile Include="Service\ILectura_CuantitativaService.cs" />
+    <Compile Include="Service\Implements\ComprensionAuditiva_CualitativaService.cs" />
+    <Compile Include="Service\Implements\ComprensionAuditiva_CuantitativaService.cs" />
+    <Compile Include="Service\Implements\Denominacion_CualitativaService.cs" />
+    <Compile Include="Service\Implements\Denominacion_CuantitativaService.cs" />
+    <Compile Include="Service\Implements\Escritura_CualitativaService.cs" />
+    <Compile Include="Service\Implements\Escritura_CuantitativaService.cs" />
+    <Compile Include="Service\Implements\ExpresionOral_CualitativaService.cs" />
+    <Compile Include="Service\Implements\ExpresionOral_CuantitativaService.cs" />
+    <Compile Include="Service\Implements\GenericService.cs" />
+    <Compile Include="Service\Implements\Lectura_CualitativaService.cs" />
+    <Compile Include="Service\Implements\Lectura_CuantitativaService.cs" />
+    <Compile Include="Service\Implements\PacienteService.cs" />
+    <Compile Include="Service\Implements\ProfesionalService.cs" />
+    <Compile Include="Service\Implements\ProtocoloService.cs" />
+    <Compile Include="Service\Implements\Repeticion_CualitativaService.cs" />
+    <Compile Include="Service\Implements\Repeticion_CuantitativaService.cs" />
+    <Compile Include="Service\Implements\SintomasNeurologicosService.cs" />
+    <Compile Include="Service\IPacienteService.cs" />
+    <Compile Include="Service\IProfesionalService.cs" />
+    <Compile Include="Service\IProtocoloService.cs" />
+    <Compile Include="Service\IRepeticion_CualitativaService.cs" />
+    <Compile Include="Service\IRepeticion_CuantitativaService.cs" />
+    <Compile Include="Service\ISintomasNeurologicosService.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
